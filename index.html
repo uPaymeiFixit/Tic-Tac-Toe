@@ -1,0 +1,35 @@
+<!--Josh Gibbs
+Period 1
+21 December 2011
+Tic-Tac-Toe-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Josh Gibbs" />
+		<title>Tic-Tac-Toe</title>
+		<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount', 'UA-31002145-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+		<script language="JavaScript" type="text/javascript" src="Tic-Tac-Toe.js"></script>
+		<style>
+			td {
+				width: 60px;
+				height: 60px;
+				font-size: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<iframe id="myPHP" style="display:none"></iframe> <!--This is for serial communication only-->
+		<center>
+			<input type="button" value="-" onclick="changeSize(1)"/>
+			<input type="button" value="Clear" onclick="doClear()"/>
+			<input type="button" value="+" onclick="changeSize(0)"/>
+			<div id="thetable"></div>
+			<input type="checkbox" id="Xai" onclick="if(this.checked && xturn){AImove()};"/> X AI
+			<input type="checkbox" checked="checked" id="Oai"/> O AI
+			<input type="checkbox" id="chk"/> Serial COM
+		</center>
+	</body>
+</html>

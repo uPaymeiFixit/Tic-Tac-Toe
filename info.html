@@ -1,0 +1,74 @@
+		<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper clearfix">
+			
+				
+				<h2 class="page-heading"><span>WORK</span></h2>	
+
+					        	
+	        	
+	        	
+				<!-- project content -->
+				<div id="project-content" class="clearfix">
+					
+					
+					
+					<!-- slider -->
+					<div class="project-slider">
+				        <div class="flexslider">
+						  <ul class="slides">
+						    <li>
+						      <iframe src="/tic-tac-toe/"></iframe>
+						    </li>
+						  </ul>
+						</div>
+					</div>
+		        	<!-- ENDS slider -->
+		        	
+		        	<!-- heading -->
+					<div class="project-heading">
+						<h2>Tic-Tac-Toe</h2>
+						<a href="/tic-tac-toe/" class="launch">Launch project</a>
+						<div class="clearfix"></div>
+					</div>
+					<!-- ENDS heading -->
+	        	
+	        	
+					<div class="project-description">
+						This is an infinitely expandable Tic-Tac-Toe game. The game also has an artificial intelligence option. I added a script to interact with an Arduino I have been experimenting with. When a player moves, it sends a command using PHP over the serial communication port to an Arduino, telling it the coordinates to apply ground and 5 volts. The Arduino uses my own method of multiplexing, and can only expand to a 5 by 5 LED grid.
+					</div>
+					
+					<div class="project-info">
+						<p>
+						<strong>Date</strong><br/>
+						December 26, 2011
+						</p>
+						<p>
+						<strong>Tags</strong><br/>
+						HTML, JavaScript, PHP, C++, Arduino, Game
+						</p>
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="project-pager">
+						<a class="previous-project opener" href="#READMEDIRECTORY">&#8592; Previous project</a>
+						<a class="next-project opener" href="#READMEDIRECTORY">Next project &#8594;</a>
+					</div>
+					
+				</div>	        	
+	        	<!--  ENDS project content-->
+
+	        	
+			</div>
+		</div>
+		<!-- ENDS MAIN -->
+
+		<script>
+		    $('.project-slider').flexslider({
+   				animation: "fade",
+    			controlNav: true,
+    			directionNav: false,
+				keyboardNav: true
+		    });
+		    openProject()
+		</script>
